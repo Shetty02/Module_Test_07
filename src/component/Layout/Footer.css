@@ -1,0 +1,130 @@
+.footer-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-header h3{    
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+color: #252B42;
+width: 110px;
+height: 32px;
+}
+.social-icons-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer-container{
+    
+    width: 1440px;
+    height: 272px;
+    margin-left: 130px;
+    padding: 50px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section-left{
+    width: 60%;
+}
+.footer-section-right{
+    width: 40%;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    color: #114C36;
+}
+.footer-section-column{
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer-section-column-head{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.footer-section-column-head p{
+    margin: 0;
+}
+.footer-section-column p{
+    width:166px;
+height: 24px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #737373;
+}
+.footer-section-column .footer-section-column-head-r{
+    width:166px;
+height: 24px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #737373;
+}
+.footer-section-column-head h5{
+width: 115px;
+height: 24px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #252B42;
+}
+.form{
+    display: flex;
+    box-sizing: border-box;
+    background: #F9F9F9;
+    border: 1px solid #23A6F0;
+    border-radius: 5px;
+}
+.form-control{
+    border: none;
+    width: 155px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+.form .form-label {
+    background: #23A6F0;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 5px 5px 0px;
+}
+.form .form-label {
+background: #23A6F0;
+border: 1px solid #E6E6E6;
+border-radius: 0px 5px 5px 0px;
+}
+.form-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 41px;
+    left: calc(50% - 72px/2);
+    top: calc(50% - 28px/2);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+
+}
+.footer-bottom{
+    text-align: center;
+}

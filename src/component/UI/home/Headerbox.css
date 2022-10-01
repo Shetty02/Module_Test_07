@@ -1,0 +1,86 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 1292px;
+    height: 622px;
+    left: calc(50% - 1292px/2 - 15px);
+    top: 92px;
+    background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
+    border-radius: 20px;
+}
+.header-container .row{
+    display: flex; 
+    width: 1292px;
+    height: 358px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 126px;
+    margin-top: 1px;
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    width: 548px;
+    height: 316px;
+}
+.season h5{
+width: 122px;
+height: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.1px;
+color: #2A7CC7;
+}
+.headline h1{
+width: 550px;
+height: 60px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 58px;
+line-height: 80px;
+letter-spacing: 0.2px;
+color: #252B42;
+}
+.info h4 {
+width: 376px;
+height: 60px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.2px;
+color: #737373;
+}
+.btn{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 15px 40px;
+gap: 10px;
+width: 221px;
+height: 62px;
+background: #23A6F0;
+border-radius: 5px;
+}
+.btn h3{
+width: 141px;
+height: 32px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #FFFFFF;
+}
