@@ -63,3 +63,15 @@ text-decoration: none;
     gap: 1.5rem;
     padding: 5px;
 }
+.like , .cart{    
+    display: flex;
+    gap: 0.2rem;
+}
+.like-icons , .cart-icons{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #23A6F0;
+}

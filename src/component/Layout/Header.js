@@ -38,9 +38,11 @@ function Header() {
             <div className="icons-list">
             <Search width ={"20px"}/>
               <div className='cart'>
-            <Cart width ={"20px"}/> <span>{count}</span>
+            <Cart width ={"20px"}/> <span className = "cart-icons">{count}</span>
               </div>
-            <Like width ={"20px"}/>
+              <div className='like'>
+            <Like width ={"20px"}/> <span className = "like-icons">{1}</span> 
+              </div>
             </div>
             </div>
           </div>
