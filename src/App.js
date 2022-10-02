@@ -10,8 +10,8 @@ function App() {
   return (
     <MyContext.Provider value={{count,setCount}}>
             <Header/>
-             <Home/>        
-           <Footer/>
+            <Home/>        
+            <Footer/>
     </MyContext.Provider>
   );
 }

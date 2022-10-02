@@ -85,17 +85,19 @@ color: #252B42;
     display: flex;
     box-sizing: border-box;
     background: #F9F9F9;
-    border: 1px solid #23A6F0;
+    border: 1px solid #E6E6E6;
     border-radius: 5px;
 }
 .form-control{
     border: none;
-    width: 155px;
-    height: 40px;
+    width: 181px;
+    height: 43px;
+    padding: 0 8px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    text-align: start;
+    font-size: 14px;
 
 }
 .form .form-label {
@@ -103,23 +105,23 @@ color: #252B42;
     border: 1px solid #E6E6E6;
     border-radius: 0px 5px 5px 0px;
 }
-.form .form-label {
+/* .form .form-label {
 background: #23A6F0;
 border: 1px solid #E6E6E6;
 border-radius: 0px 5px 5px 0px;
-}
+} */
 .form-label{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 41px;
+    width: 83px;
+    height: 44px;
     left: calc(50% - 72px/2);
     top: calc(50% - 28px/2);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 14px;
     text-align: center;
     cursor: pointer;
     color: #FFFFFF;

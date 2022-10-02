@@ -115,7 +115,7 @@ function Footer() {
 <div className='form'>
   <input className="form-control form-control-lg" placeholder='Your Email' onChange={handleUserEmailChange} value ={userEmail} type="text"/>
   <button className="form-label" type='submit' onClick={handleSubmit}>Subscribe</button>
-</div>
+ </div>
  <p className='footer-section-column-head-r'>Lorem impsum dolor amit</p>
  </div>
  </div>

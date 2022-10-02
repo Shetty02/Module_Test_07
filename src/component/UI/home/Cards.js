@@ -6,8 +6,8 @@ import MyContext from '../../../Context'
 function Cards() {
   const{count,setCount} = React.useContext(MyContext);
 
-  const userResponse = [];
-  const [allResponses, setAllResponses] = React.useState([]);
+  const userProducts = [];
+  const [allProducts, setAllProducts] = React.useState([]);
   const [stopInfiniteLoop, setStopInfiniteLoop] = React.useState(false);
   
   if(!stopInfiniteLoop) 
@@ -24,7 +24,7 @@ function Cards() {
                 data[dataItem].productImage,
                 data[dataItem].productName,
                 );
-                userResponse.push({
+                userProducts.push({
                   id: data[dataItem].id,
                   oldPrice: data[dataItem].oldPrice,
                   newPrice: data[dataItem].newPrice,
@@ -32,31 +32,31 @@ function Cards() {
                 productName: data[dataItem].productName,
                })
           }
-          setAllResponses(userResponse);
+          setAllProducts(userProducts);
         })
     setStopInfiniteLoop(true);
   }
   return ( 
-    <div className="reponse-container">
+    <div className="product-container">
   <p className='product'><h3>Product</h3></p>
-<div className="response-row">
+<div className="product-row">
   
 {
-  allResponses.map((item) =>(
-    <div className='response-item-cards' key={item.id}>
+  allProducts.map((item) =>(
+    <div className='product-item-cards' key={item.id}>
        <img src={item.productImage} alt="productImage" />
-       <p className='response-productName'>{item.productName}</p>            
+       <p className='product-productName'>{item.productName}</p>            
        <div className='price-tag'>
          <div className="star-icons">
-         <span className='response-star'><Star/><Star/><Star/><Star/><Star/></span>
+         <span className='product-star'><Star/><Star/><Star/><Star/><Star/></span>
          </div>
          <div className="price">
-         <span className='response-oldPrice'>{item.oldPrice}/-</span>
-         <span className='response-newPrice'>{item.newPrice}/-</span>
+         <span className='product-oldPrice'>{item.oldPrice}/-</span>
+         <span className='product-newPrice'>{item.newPrice}/-</span>
          </div>
          </div>
        {/* <button className="addToCart"> <h3>Add to Cart</h3></button> */}
-       <button className="addToCart" onClick={() => setCount( count + 1)}> <h3>Add to Cart</h3></button>
+       <button className="addToCart" onClick={() => setCount( count + 1)}> <h3>ADD TO CART</h3></button>
      </div>
  ))
  

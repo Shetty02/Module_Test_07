@@ -11,8 +11,8 @@ import {
     // Route,
     Link
   } from "react-router-dom";
-function Header() {
 
+function Header() {
   const {count} = React.useContext(MyContext);
 
   return (
@@ -36,10 +36,10 @@ function Header() {
                <div><Login width ={"20px"}/><Link to="/Login">Login / Register</Link>
                </div>
             <div className="icons-list">
+            <Search width ={"20px"}/>
               <div className='cart'>
             <Cart width ={"20px"}/> <span>{count}</span>
               </div>
-            <Search width ={"20px"}/>
             <Like width ={"20px"}/>
             </div>
             </div>

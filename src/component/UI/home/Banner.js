@@ -1,12 +1,12 @@
 import React from 'react'
-import './Headerbox.css'
+import './Banner.css'
 import img from './img/imag.png'
 
-function Headerbox() {
+function Banner() {
   return (
   
     <div className="header-container">
-         {/* Headerbox */}
+         {/* Banner */}
             <div className="row">
             <div className="content-box">
             <div className="season">
@@ -30,4 +30,4 @@ function Headerbox() {
   )
 }
 
-export default Headerbox
+export default Banner

@@ -1,11 +1,11 @@
 import React from 'react'
+import Banner from '../UI/home/Banner'
 import Cards from '../UI/home/Cards'
-import Headerbox from '../UI/home/Headerbox'
 
 function Home() {
   return (
     <div>
-        <Headerbox/>
+        <Banner/>
         <Cards/>
     </div>
   )
