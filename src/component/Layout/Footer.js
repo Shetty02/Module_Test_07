@@ -6,26 +6,7 @@ import './Footer.css'
 
 function Footer() {
   const [userEmail, setUserEmail] = React.useState('');
-    const userResponse = [];
-    const [stopInfiniteLoop, setStopInfiniteLoop] = React.useState(false);
 
-  if(!stopInfiniteLoop) 
-  {
-      fetch('https://fetching-email-default-rtdb.asia-southeast1.firebasedatabase.app/email.json')
-      .then(response => response.json())
-      .then(data =>{
-          console.log(data);
-          for(const dataItem in data){
-              console.log(
-                  data[dataItem].userEmail,
-              );
-              userResponse.push({userEmail: data[dataItem].userEmail})
-          }
-          // setAllResponses(userResponse);
-      })
-  
-      setStopInfiniteLoop(true);
-  }  
     //Getting all the responses
     const handleUserEmailChange = (event) => {
         setUserEmail(event.target.value);
@@ -37,8 +18,12 @@ function Footer() {
         console.log('userEmail: ', userEmail);
 
         if(userEmail === ""){
-          alert("can't submit empty feedback");
-          return;
+          alert("Can't Submit an Empty Email!");
+          // return;
+        }
+        else if (userEmail && userEmail.includes('@') && userEmail.includes('.') && userEmail.lastIndexOf('.') <= userEmail.length - 3 && userEmail.indexOf('@') !== 0){
+          alert("Your Email is Submmited Successfully!");
+          // return;
         }
 
         //Create(CRUD)

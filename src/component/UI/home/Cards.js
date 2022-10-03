@@ -15,15 +15,15 @@ function Cards() {
       fetch('https://acciojob-module-7-sept-2022-default-rtdb.asia-southeast1.firebasedatabase.app/products.json')
       .then(response => response.json())
       .then(data =>{
-        console.log(data);
+        // console.log(data);
           for(const dataItem in data){
-            console.log(
-                data[dataItem].id,
-                data[dataItem].oldPrice,
-                data[dataItem].newPrice,
-                data[dataItem].productImage,
-                data[dataItem].productName,
-                );
+            // console.log(
+            //     data[dataItem].id,
+            //     data[dataItem].oldPrice,
+            //     data[dataItem].newPrice,
+            //     data[dataItem].productImage,
+            //     data[dataItem].productName,
+            //     );
                 userProducts.push({
                   id: data[dataItem].id,
                   oldPrice: data[dataItem].oldPrice,
